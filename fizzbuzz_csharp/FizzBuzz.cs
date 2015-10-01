@@ -5,9 +5,23 @@ namespace fizzbuzz_csharp
 {
 	public class FizzBuzz
 	{
-		public List<int> GetFizzBuzz ()
+		public List<string> GetFizzBuzz (int ceiling)
 		{
-			return new List<int> { 1, 2 };
+			var numbers = new List<string> ();
+
+			for (var i = 1; i <= ceiling; i++) 
+			{
+				if (i % 3 == 0) 
+				{
+					numbers.Add ("Fizz");
+				}
+				else
+				{
+					numbers.Add(i.ToString());
+				}
+			}
+
+			return numbers;
 		}
 	}
 }
