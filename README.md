@@ -22,10 +22,11 @@ public string GetNextFizzBuzz(int position)
   //body
 }
 ```
-I these methods I am defining that the input arguments `ceiling` and `position` must be `integers`.
+In these methods I am defining that the input arguments `ceiling` and `position` must be `integers`.
 
 In the method `GetFizzBuzz` I am defining that the output must be a `List` of strings; `List<string>` and the ouput of `GetNextFizzBuzz` must be a `string`
 
+-----
 
 ## Issues encountered
 
@@ -36,7 +37,7 @@ In `Test.cs` I had an error compiling when using
 var expected = new List<int>{1,2};
 ```
 the error was
-`The non-generic type 'NUnit.Framework.List' cannot be used with the type arguments`
+`The non-generic type 'NUnit.Framework.List' cannot be used with the type arguments.`
 
 #### Solution #1
 

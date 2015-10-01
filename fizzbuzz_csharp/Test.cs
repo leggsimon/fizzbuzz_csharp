@@ -41,5 +41,18 @@ namespace fizzbuzz_csharp
 
 			CollectionAssert.AreEqual (expected, actual);
 		}
+
+		[Test ()]
+		public void TestFizzBuzz_Given15thPosition_ShouldReturnFizzBuzz ()
+		{
+			var fizzbuzz = new FizzBuzz ();
+			var position = 15;
+			var expected = "FizzBuzz";
+
+			var totalFizzBuzzList = fizzbuzz.GetFizzBuzz (15);
+			var actual = totalFizzBuzzList [position - 1];
+
+			CollectionAssert.AreEqual (expected, actual);
+		}
 	}
 }

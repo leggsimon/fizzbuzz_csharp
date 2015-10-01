@@ -19,6 +19,10 @@ namespace fizzbuzz_csharp
 
 		public string GetNextFizzBuzz(int position)
 		{
+			if (position % 15 == 0)
+			{
+				return "FizzBuzz";
+			}
 			if (position % 3 == 0)
 			{
 				return "Fizz";
