@@ -10,18 +10,18 @@ namespace fizzbuzz_csharp
 	public class Test
 	{
 		[Test ()]
-		public void TestFizzBuzz_ShouldReturnTwoIntegers()
+		public void TestFizzBuzz_ShouldReturnTwoIntegers ()
 		{
 			var fizzbuzz = new FizzBuzz ();
 			var expected = new List<string>{ "1", "2" };
-		
+
 			var actual = fizzbuzz.GetFizzBuzz (2);
 
 			CollectionAssert.AreEqual (expected, actual);
 		}
 
 		[Test ()]
-		public void TestFizzBuzz_ShouldReturnFirstThreeItems()
+		public void TestFizzBuzz_ShouldReturnFirstThreeItems ()
 		{
 			var fizzbuzz = new FizzBuzz ();
 			var expected = new List<string>{ "1", "2", "Fizz" };
@@ -30,6 +30,16 @@ namespace fizzbuzz_csharp
 
 			CollectionAssert.AreEqual (expected, actual);
 		}
+
+		[Test ()]
+		public void TestFizzBuzz_ShouldReturnFirstFiveItems ()
+		{
+			var fizzbuzz = new FizzBuzz ();
+			var expected = new List<string>{ "1", "2", "Fizz", "4", "Buzz" };
+
+			var actual = fizzbuzz.GetFizzBuzz (5);
+
+			CollectionAssert.AreEqual (expected, actual);
+		}
 	}
 }
-

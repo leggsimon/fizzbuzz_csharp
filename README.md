@@ -6,7 +6,26 @@ Trying to learn C# basics by doing a fizzbuzz game
 
 ## Things I have learnt
 
-- In a `List`, because C# is ['strongly typed'](http://whatis.techtarget.com/definition/strongly-typed), you have to define the type of all the elements in the `List` so you can't combine Strings and Integers within the same `List`
+In a `List`, because C# is ['strongly typed'](http://whatis.techtarget.com/definition/strongly-typed), you have to define the type of all the elements in the `List` so you can't combine Strings and Integers within the same `List`
+
+-----
+
+When defining a method you have to define both the types of input and types of output.
+```cs
+public List<string> GetFizzBuzz (int ceiling)
+{
+  //body
+}
+
+public string GetNextFizzBuzz(int position)
+{
+  //body
+}
+```
+I these methods I am defining that the input arguments `ceiling` and `position` must be `integers`.
+
+In the method `GetFizzBuzz` I am defining that the output must be a `List` of strings; `List<string>` and the ouput of `GetNextFizzBuzz` must be a `string`
+
 
 ## Issues encountered
 

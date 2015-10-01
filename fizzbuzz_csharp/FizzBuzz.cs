@@ -9,19 +9,25 @@ namespace fizzbuzz_csharp
 		{
 			var numbers = new List<string> ();
 
-			for (var i = 1; i <= ceiling; i++) 
+			for (var i = 1; i <= ceiling; i++)
 			{
-				if (i % 3 == 0) 
-				{
-					numbers.Add ("Fizz");
-				}
-				else
-				{
-					numbers.Add(i.ToString());
-				}
+				numbers.Add (GetNextFizzBuzz (i));
 			}
 
 			return numbers;
+		}
+
+		public string GetNextFizzBuzz(int position)
+		{
+			if (position % 3 == 0)
+			{
+				return "Fizz";
+			}
+			if (position % 5 == 0)
+			{
+				return "Buzz";
+			}
+			return position.ToString();
 		}
 	}
 }
