@@ -1,6 +1,6 @@
 # Objective
 
-Trying to learn C# basics by doing a fizzbuzz game
+Trying to learn C# basics by Test Driving a simple fizzbuzz program.
 
 
 
